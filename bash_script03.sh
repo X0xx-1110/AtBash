@@ -1,3 +1,3 @@
 #!/bin/bash
-#Maybe imposible
+#Maybe impossible
 echo ^0000000000000000;
