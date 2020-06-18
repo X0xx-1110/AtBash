@@ -1,5 +1,5 @@
 #!/bin/bash
-#Multi demensional array and maybe its first walk!
+#multidimensional array and maybe its first walk!
 
 
 arr1=(1 2 3 4 5)
