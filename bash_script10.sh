@@ -13,7 +13,7 @@ find /tmp -type f -ls -executable & \
 find /tmp -type f -ls -writable
 
 #/var
-echo "\n/******************At LAST day opened files over /var ********************/\n" & \
+echo "\n /******************At LAST day opened files over /var ********************/\n" & \
 find /var -type f -ctime 1 -mtime 1 -ls -true
 
 
