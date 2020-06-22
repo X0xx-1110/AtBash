@@ -2,7 +2,7 @@
 #URL one word Suggestions & BASIC and Common explanation!
 #Example: ./bash_script13.sh flower
 
-syn=$(wn sun -simsv -grepv -synsv -hypev | grep "^[[:space:]]\|^[a-z]" | cut -d ">" -f 2 | cut -d "," -f 2  | cut -d " " -f 1,2 | sort | uniq | head -15) > /dev/null
+syn=$(wn ${1} -simsv -grepv -synsv -hypev | grep "^[[:space:]]\|^[a-z]" | cut -d ">" -f 2 | cut -d "," -f 2  | cut -d " " -f 1,2 | sort | uniq | head -15) > /dev/null
 if [[ ${#syn} -eq 0 ]]
 then
 	echo "NO RESULT!!!"
