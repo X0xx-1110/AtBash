@@ -1,8 +1,8 @@
 #!/bin/bash
 #URL one word Suggestions & BASIC and Common explanation!
-#Example ./bash_script13.sh flower
+#Example: ./bash_script13.sh flower
 
-syn=$(wn ${1} -coorv | grep \=\> | grep -v \, | cut -d ">" -f 2 | sort | uniq | head -50) > /dev/null
+syn=$(wn sun -simsv -grepv -synsv -hypev | grep "^[[:space:]]\|^[a-z]" | cut -d ">" -f 2 | cut -d "," -f 2  | cut -d " " -f 1,2 | sort | uniq | head -15) > /dev/null
 if [[ ${#syn} -eq 0 ]]
 then
 	echo "NO RESULT!!!"
@@ -14,7 +14,7 @@ do
 	then
 		echo ""
 	else
-		echo "|- http://www."${i}".com"
+		echo "|- http://www."${i}".com - |"
 	fi 
 done
 fi
