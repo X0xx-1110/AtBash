@@ -1,6 +1,6 @@
 #!/bin/bash
 #A little bit more of these! & My point of view.& and something else
-#Example: ./bash_script15.sh
+#Example: ./GenUUidForever.sh
 
 killall uuidd
 uuidd -p /tmp/uuidd.pid -s /tmp/uuidd.socket && uuidd -d -r -n 999999999 -s /tmp/uuidd.socket && uuidd -d -k -s /tmp/uuidd.socket
