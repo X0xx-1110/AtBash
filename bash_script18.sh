@@ -1,8 +1,7 @@
 #!/bin/bash
-#Full of /proc that there be lower than 3 chars.Displaying of configuration of part of a system!
+#Full of /proc/sys that there be lower than 3 chars.Displaying of configuration of part of a system!
 echo;
-dir="/proc/net"
-proc=$( find /proc/sys/  -print )
+proc=$( find /proc/sys  -print )
 y=0
 
 for i in ${proc}
