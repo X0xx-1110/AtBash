@@ -1,1 +1,2 @@
-[paypal:creativepoetryabout@gmail.com]
+github: Kalata
+paypal:creativepoetryabout@gmail.com
