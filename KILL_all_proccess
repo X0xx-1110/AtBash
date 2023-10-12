@@ -1,1 +1,5 @@
+#! Kill all proccess about like a firefox on Debian machine!
+#! Lets do it!
+#! Be the best.
+
 kill -9  $(ps aux | grep firefox | cut -d " " -f 3)
